@@ -2,6 +2,6 @@ import { RoomMember } from './room-member';
 
 describe('RoomMember', () => {
   it('should create an instance', () => {
-    expect(new RoomMember()).toBeTruthy();
+    expect(new RoomMember("ABC",123,"XYZ@GMAIL.COM")).toBeTruthy();
   });
 });
