@@ -1,0 +1,16 @@
+<table border="2">
+    <thead>
+        <th>Name</th>
+        <th>Room Number</th>
+        <th>Email</th>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let member of MemberDetails">
+            <td>{{member.name}}</td>
+            <td>{{member.roomNumber}}</td>
+            <td>{{member.email}}</td>
+            
+        </tr>
+    </tbody>
+</table>

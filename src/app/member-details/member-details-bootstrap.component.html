@@ -1,0 +1,19 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <th>Name</th>
+        <th>Room Number</th>
+        <th>Email</th>
+        <th>Met Condition</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let member of MemberDetails">
+            <td>{{member.name}}</td>
+            <td>{{member.roomNumber}}</td>
+            <td>{{member.email}}</td>
+            <td>
+                <div *ngIf="member.roomNumber==412;else myBlock">Yes</div>
+                <ng-template #myBlock>No</ng-template>
+            </td>
+        </tr>
+    </tbody>
+</table>
